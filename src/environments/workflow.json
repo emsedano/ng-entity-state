@@ -1,0 +1,16 @@
+{
+  "new": {
+    "submit": {"permittedRoles": ["SELLER"]}
+  },
+  "submitted": {
+    "sendToClient": { "permittedRoles": ["MANAGER"]},
+    "requestMoreInfo": { "permittedRoles": ["MANAGER", "SELLER"]}
+  },
+  "sentToClient": {
+    "approve": { "permittedRoles": ["CLIENT"]},
+    "rejectSolution": { "permittedRoles": ["MANAGER", "CLIENT"]}
+  },
+  "approved": {
+    "reset": { "permittedRoles": ["CLIENT", "MANAGER", "CLIENT"] }
+  }
+}

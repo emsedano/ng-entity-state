@@ -1,0 +1,14 @@
+<h3>Request View</h3>
+<pre>
+  Name: {{request.name}}
+  State: {{request.state}}
+  Description: {{request.description}}
+</pre>
+<div *appCanAccess="[request.state, 'reset']">
+  <button (click)="reset()">Reset request</button>
+</div>
+
+<app-submit-request [request]="request" (requestSubmitted)="updateRequest($event)"></app-submit-request>
+<app-send-to-client [request]="request" (sendToClientEvent)="updateRequest($event)"></app-send-to-client>
+<app-approve-reject-solution [request]="request" (clientApprovalEvent)="updateRequest($event)"></app-approve-reject-solution>
+<hr>

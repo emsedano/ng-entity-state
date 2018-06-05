@@ -1,0 +1,2 @@
+<button id="approveSolution" *appCanAccess="[request.state, 'approve']" (click)="approveSolution()">Client Approve Solution</button>
+<button id="rejectSolution" *appCanAccess="[request.state, 'rejectSolution']" (click)="rejectSolution()">Client to Reject solution</button>
