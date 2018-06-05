@@ -4,7 +4,7 @@
   },
   "submitted": {
     "sendToClient": { "permittedRoles": ["MANAGER"]},
-    "requestMoreInfo": { "permittedRoles": ["MANAGER", "SELLER"]}
+    "requestMoreInfo": { "permittedRoles": ["MANAGER"]}
   },
   "sentToClient": {
     "approve": { "permittedRoles": ["CLIENT"]},

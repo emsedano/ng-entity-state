@@ -1,9 +1,9 @@
 <h3>Request View</h3>
-<pre>
-  Name: {{request.name}}
-  State: {{request.state}}
-  Description: {{request.description}}
-</pre>
+<div>
+  <p>Name: {{request.name}}</p>
+  <p>State: <b>{{request.state}}</b></p>
+  <p>Description: {{request.description}}</p>
+</div>
 <div *appCanAccess="[request.state, 'reset']">
   <button (click)="reset()">Reset request</button>
 </div>

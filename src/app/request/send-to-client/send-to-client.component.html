@@ -1,2 +1,2 @@
-<button *appCanAccess="[request.state, 'sendToClient']" (click)="approveAndSendToClient()">Approve and Send to client</button>
-<button *appCanAccess="[request.state, 'requestMoreInfo']" (click)="rejectRequest()">Request more info</button>
+<button *appCanAccess="[request.state, 'sendToClient']" (click)="approveAndSendToClient()" class="btn">Approve and Send to client</button>
+<button *appCanAccess="[request.state, 'requestMoreInfo']" (click)="rejectRequest()" class="btn">Request more info</button>

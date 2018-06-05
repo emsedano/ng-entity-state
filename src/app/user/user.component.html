@@ -1,15 +1,16 @@
 <h3>Current user profile</h3>
-<pre>
-  User name: {{user.name}}
-  Roles: {{user.roles}}
-</pre>
+<div>
+  <p>User name: {{user.name}}</p>
+  <p>Roles: <b>{{user.roles}}</b></p>
+</div>
 
 <form #rolesForm="ngForm" (ngSubmit)="applyRoles(rolesForm.form.value)">
     <label for="name">Name</label>
-
-       <div *ngFor="let role of allRoles; let idx = index">
+      <ul>
+       <li *ngFor="let role of allRoles; let idx = index">
          <input type="checkbox" [checked]="role.checked"  value="{{role.name}}" name="appliedFilters" (change)="toggleSelection(idx, role.name)" /> {{role.name}}
-       </div>
+       </li>
+      </ul>
 
-  <button type="submit" [disabled]="!rolesForm.form.valid">Apply roles</button>
+  <button type="submit" [disabled]="!rolesForm.form.valid" class="btn">Apply roles</button>
 </form>

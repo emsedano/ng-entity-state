@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,700');
+
+body {
+ background:rgb(88, 88, 88);
+ padding: 3em;
+ font-family: 'IBM Plex Mono', monospace;
+ color:#fff;
+}
+ul {
+ list-style-type:none;
+ margin:0 0 2em 0;
+ padding:0;
+}
+ul li {
+ display:inline;
+ margin-right: 30px;
+}
+ul li a {
+ font-size: 1.5em;
+}
+a {
+ color:#fff;
+ text-decoration:none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+.col {
+  padding: .4em 1.3em;
+}
+.color-dark {
+  background: rgb(61, 61, 61);
+}
+.color-light {
+  background: rgb(143, 143, 143);
+}
+
+input.txt, textarea {
+  border: 0;
+  padding: 1em;
+  width: 80%;
+  margin-bottom: 2em;
+}
+input.btn, button.btn {
+  border: 0;
+  display:block;
+  padding:1em 3em;
+  background:rgb(63, 121, 245);
+  color: white;
+  margin-bottom:1em;
+  cursor:pointer;
+}
+.life-container {
+  background: rgb(61, 61, 61);
+  padding:.5em;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.preview {
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+
+.preview p {
+  font-weight: bold;
+}
